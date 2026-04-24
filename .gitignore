@@ -1,0 +1,5 @@
+ekilec-bench/evaluation
+.vscode/
+*__pycache__/
+
+*txt
