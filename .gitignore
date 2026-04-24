@@ -1,5 +1,9 @@
 ekilec-bench/evaluation
 .vscode/
 *__pycache__/
-
+*data/
+*results/
+ekilec-reverse-dictionary
 *txt
+ekilec-bench/shuffled_mqa/
+*.env
