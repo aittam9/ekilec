@@ -2,7 +2,7 @@ OPEN_ITA_MODELS = {
     "llamantino-3-anita":"swap-uniba/LLaMAntino-3-ANITA-8B-Inst-DPO-ITA", 
     "minerva-7b-inst": "sapienzanlp/Minerva-7B-instruct-v1.0", 
 #     "minerva-3b-v1.0": "sapienzanlp/Minerva-3B-v1.0",
-    "cerbero-7b-open-chat": "galatolo/cerbero-7b-openchat", # base is openchat
+    # # base is openchat
 #     "cerbero-7b" : "galatolo/cerbero-7b", # base is mistral
 #     "llama3-it-pa": "swap-uniba/llama3-it-pa-300k-adapter",
 #     "dante-llm-7b" :"rstless-research/DanteLLM-7B-Instruct-Italian-v0.1",
@@ -23,17 +23,17 @@ API_MODELS = {
 
 
 
-PROMPT = """###ISTRUZIONI###
+PROMPT = """# ISTRUZIONI
 Sei un esperto in materia di giurisprudenza italiana e diritto privato italiano.
 Di seguito ti verrà sottoposto un quesito e delle possibili risposte.
 Il tuo compito è selezionare la risposta corretta in base al quesito.
 Restituisci in output solo il label corrispondente alla risposta corretta selezionando tra [A, B, C, D] e null'altro.
 **Non devi** assolutamente aggiungere altro testo o spiegazioni alla risposta, ma solo il label della risposta corretta.
 
-###QUESITO###
+# QUESITO
 {quesito_}
 
-###RISPOSTE POSSIBILI###
+# RISPOSTE POSSIBILI
 {risposte_possibili}
 
 Risposta:

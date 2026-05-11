@@ -3,7 +3,10 @@ ekilec-bench/evaluation
 *__pycache__/
 *data/
 *results/
-ekilec-reverse-dictionary
+ekilec-reverse-dictionary/scripts/build_rd_dataset0.py
+ekilec-reverse-dictionary/analysis.ipynb
 *txt
 ekilec-bench/shuffled_mqa/
 *.env
+*rd_dataset/
+plots/

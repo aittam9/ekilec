@@ -30,30 +30,6 @@ BASE_DIR = "../data"
 
 
 
-# #helper format a single prompt
-# def format_prompt(prompt_template, text, choices):
-#     return prompt_template.replace("{quesito_}", text ).replace("{risposte_possibili}", "\n".join(choices))
-
-
-# #format the whole dataset
-# def prepare_data(prompt, shuffled_dataset):
-#     all_prompts = []
-#     for k in shuffled_dataset:
-#         text = shuffled_dataset[k]["question_text"]
-#         choices = shuffled_dataset[k]["choices"]
-#         all_prompts.append(format_prompt(prompt, text, choices))
-#     return all_prompts
-
-
-# #store all correct answers and labels after the shuffling
-# def get_correct_labels(shuffled_dataset):
-#     correct_labels = []
-#     full_answers = []
-#     for k in shuffled_dataset:
-#         full_answers.append(shuffled_dataset[k]["correct_answer"])
-#         correct_labels.append(shuffled_dataset[k]["correct_answer"][0])
-#     return correct_labels, full_answers
-
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
@@ -75,7 +51,7 @@ if __name__ == "__main__":
     print(f"Length of eval data: {len(data)}")
     correct_labels, full_answers = get_correct_labels(data)
     all_prompts = prepare_data(PROMPT, data)
-    
+    print(all_prompts[0])
     
     # #load hf model and tokenizer
     # hf_model, hf_tokenizer = load_hf_model(model_id)
